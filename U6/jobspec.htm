@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="styles.css" rel="stylesheet" type="text/css">
+<title>Job Specification - ICT Solutions - Web Development Team</title>
+</head>
+<body>
+<div class="topnav">
+
+  <a href="courses.htm">Courses</a>
+  <a href="apply.htm">Apply</a> 
+  <a href="jobspec.htm">Job Specification</a>
+  <a href="trainees.htm">Existing Trainees</a>
+  <a href="index.htm">Home</a>
+
+</div>
+
+<div class="logo">
+  <a href="index.htm">
+    <img src="images/ictsolutionslogo.png" style="width:50%" alt="ICTSolutions Logo">
+  </a>
+ </div>
+
+<div class="content">
+  <center>
+  <div class="dropdown">
+    <span>Minimum Requirements(Hover for More)</span>
+    <div class="dropdown-content">
+      <h2>Entry requirements</h2>
+      <p>
+
+      
+          1 or 2 A levels, or equivalent, for a foundation degree or higher national diploma
+          2 to 3 A levels, or equivalent, for a degree
+      </p>
+    </div>
+  </div>
+  <div class="dropdown2">
+    <span>Job Specification</span>
+    <div class="dropdown-content2">
+      
+      <p>
+        Welcome to our webpage detailing the job specifications for the role of Web Developer. This document outlines the key responsibilities, qualifications, and skills required for aspiring candidates in the field of web development. As technology continues to evolve, the demand for skilled web developers remains high, making this an exciting and dynamic career path for individuals with a passion for coding and design.
+      </p>
+    </div>
+  </div>
+  <div class="dropdown">
+    <span>Is this job for you? (Hover for More)</span>
+    <div class="dropdown-content">
+      <h2>Is being a Web Dev what you want?</h2>
+      <p>
+        Is web development the right path for you? Consider the following. Are you drawn to problem-solving and creativity? Web development demands both, 
+        offering constant challenges and opportunities to innovate. Do you enjoy continuous learning? In this ever-evolving field, new technologies emerge regularly, 
+        requiring a commitment to staying updated. Are you a team player? Collaboration is key in web development, with projects often involving designers, developers, and clients. 
+        If you thrive on challenges, creativity, continuous learning, and teamwork, then web development could be your ideal career path.
+      </p>
+      
+    </div>
+  </div>
+  </center>
+
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="css">1 / 3</div>
+	  <a target=”_blank” href="https://nationalcareers.service.gov.uk/job-profiles/web-developer">
+    <img src="images/css.jpg" style="width:100%" alt="A image of a css logo">
+	</a>
+ 
+  </div>
+
+  <div class="mySlides fade">
+    <div class="HTMLImg2">2 / 3</div>
+	<a target=”_blank” href="https://nationalcareers.service.gov.uk/job-profiles/web-developer">
+    <img src="images/html1.png" style="width:100%" alt="a secondary image of html">
+	</a>
+
+  </div>
+
+  <div class="mySlides fade">
+    <div class="codeimg">3 / 3</div>
+	<a target=”_blank” href="https://nationalcareers.service.gov.uk/job-profiles/web-developer">
+    <img src="images/code.jpeg" style="width:100%" alt="image of html code">
+	</a>
+   
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+
+
+</div>
+
+<div class="footer">
+  <div class="row">
+      <div class="column">
+          <h2> Contact Us</h2>
+          Phone Number: +44 20 3234 5748<br>
+          Email: help@ITSolutions.com
+          <br>
+          <br>
+          <a target=”_blank” href="https://www.instagram.com">
+              <img src="images/instagram.png" style="width:7%" alt="a image of the instagram logo">
+          </a>
+          <a target=”_blank” href="https://www.facebook.com">
+              <img src="images/facebook.png" style="width:7%" alt="a Image of the facebook logo">
+          </a>
+          <a target=”_blank” href="https://www.twitter.com">
+              <img src="images/twitter.png" style="width:7%" alt="a image of the twitter logo">
+          </a>
+      </div>
+      <div class="column">
+    
+    </div>
+      <div class="column">
+  
+          <h2>Copyright</h2>
+          <h3>Copyright © 2024 ICT Solutions. All rights reserved.</h3>
+  
+  
+  
+      </div>
+  
+      </div>
+  </div>
+
+
+
+
+</body>
+</html>
